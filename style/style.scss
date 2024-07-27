@@ -1,0 +1,175 @@
+@import './reset.scss';
+
+$primary: #3CB3AB;
+$grey: #7A7A7A;
+$light-grey: #979797;
+$bg: #FAFAFA;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  max-width: 1108px;
+  margin: 0 auto;
+  font-family: "Commissioner", sans-serif;
+  // background-color: $bg;
+  // background-image: url('../images/image-hero-desktop.jpg');  
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+  // background-position: top center;
+  background: $bg url('../images/image-hero-desktop.jpg') no-repeat top center / 100%;
+}
+
+// .container {
+//   display: flex;
+//   justify-content: center;
+// }
+
+main {
+  width: 730px;
+  margin: 0 auto;
+}
+
+h1, .h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2, .h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h3, .h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+  color: $grey;
+}
+
+header {
+  padding-block: 48px 60px;
+  color: #FFFFFF;
+  
+  &,
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    gap: 32px;
+    font-size: 13px;
+  }
+}
+
+
+section {
+  margin-top: 24px;
+  padding: 48px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid hsla(0, 0%, 0%, 0.0497);
+}
+
+.section-hero {
+  text-align: center;
+  p {
+    margin-top: 15px;
+  }
+  .hero-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 17px 40px;
+  }
+  .btn-bookmark {
+    display: flex;
+    align-items: center;
+    padding-inline: 72px 24px;
+    color: $grey;
+    background-color: $bg;
+    position: relative;
+    img {
+      height: 100%;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.section-dashboard {
+  display: flex;
+  justify-content: space-between;
+  div {
+    flex: 1;
+  }
+  div:not(:first-of-type){
+    border-left: solid 1px #00000026;
+    padding-left: 47px;
+  }
+  .dashboard-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .dashboard-goal {
+    font-size: 15px;
+    margin-top: 8px;
+  }
+}
+
+.section-stands {
+  &>p {
+    margin-top: 35px;
+  }
+  .stand-cards {
+    margin-top: 40px;
+  }
+  .stand-card {
+    margin-top: 24px;
+    padding: 32px;
+    border-radius: 8px;
+    border: solid 1px #00000026;
+    &>p {
+      margin-block: 24px;
+    } 
+  }
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    p {
+      color: $primary;
+    }
+  }
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+    span {
+      margin-right: 8px;
+      color: #000000;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+  .btn {
+    padding: 16px 32px;
+  }
+}
+
+.btn {
+  background-color: $primary;
+  border: none;
+  border-radius: 33.5px;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+}

@@ -2,62 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">     
+  <link rel="stylesheet" href="./style/style.css">
   <title>Frontend Mentor | Crowdfunding product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Discover
-  Get Started
-
-  Mastercraft Bamboo Monitor Riser
-  A beautiful & handcrafted monitor stand to reduce neck and eye strain.
-
-  Back this project
-  Bookmark
-
-  $89,914 of $100,000 backed
-  5,007 total backers
-  56 days left
-
-  About this project
-
-  The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
-  to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
-  your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
-
-  Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
-  to allow notepads, pens, and USB sticks to be stored under the stand.
-  
-  Bamboo Stand
-  Pledge $25 or more
-  You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
-  you’ll be added to a special Backer member list.
-  101 left
-  Select Reward
-
-  Black Edition Stand
-  Pledge $75 or more
-  You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
-  member list. Shipping is included.
-  64 left
-  Select Reward
-
-  Mahogany Special Edition
-  Pledge $200 or more
-  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
-  to our Backer member list. Shipping is included.
-  0 left
-  Out of Stock
+  <div class="container">
+    <header>
+      <figure><img src="./images/logo.svg" alt="logo"></figure>
+      <nav>
+        <ul>
+          <li>About</li>
+          <li>Discover</li>
+          <li>Get Started</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <h1>Mastercraft Bamboo Monitor Riser</h1>
+        <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+        <div class="hero-btns">
+          <button class="btn" type="button">Back this project</button>
+          <div class="btn btn-bookmark"><img src="./images/icon-bookmark.svg" alt=""><span>Bookmark</span></div>
+        </div>
+      </section>
+      <section class="section-dashboard">
+          <div>
+            <p class="dashboard-number">$89,914</p>
+            <p class="dashboard-goal">of $100,000 backed</p>
+          </div>
+          <div>
+            <p class="dashboard-number">5,007</p>
+            <p class="dashboard-goal">total backers</p>
+          </div>
+          <div>
+            <p class="dashboard-number">56</p>
+            <p class="dashboard-goal">days left</p>
+          </div>
+      </section>
+      <section class="section-stands">
+        <h2>About this project</h2>
+        <p>
+          The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
+          to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
+          your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+        </p>
+        <p>
+          Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
+          to allow notepads, pens, and USB sticks to be stored under the stand.
+        </p>
+      
+        <div class="stand-cards">
+          <div class="stand-card">
+            <div class="card-title">
+              <h3>Bamboo Stand</h3>
+              <p>Pledge $25 or more</p>
+            </div>
+            <p>
+              You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+              you’ll be added to a special Backer member list.
+            </p>
+            <div class="card-info">
+              <p><span>101</span> left</p>
+              <button class="btn" type="button">Select Reward</button>
+            </div>
+          </div>
+          <div class="stand-card">
+            <div class="card-title">
+              <h3>Black Edition Stand</h3>
+              <p>Pledge $75 or more</p>
+            </div>
+            <p>
+              You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+              member list. Shipping is included.
+            </p>
+            <div class="card-info">
+              <p><span>64</span> left</p>
+              <button class="btn" type="button">Select Reward</button>
+            </div>
+          </div>
+          <div class="stand-card">
+            <div class="card-title">
+              <h3>Mahogany Special Edition</h3>
+              <p>Pledge $200 or more</p>
+            </div>
+            <p>
+              You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+              to our Backer member list. Shipping is included.
+            </p>
+            <div class="card-info">
+              <p><span>0</span> left</p>
+              <button class="btn" type="button">Out of Stock</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <!-- Selection modal start -->
 
